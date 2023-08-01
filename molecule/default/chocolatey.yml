@@ -1,0 +1,14 @@
+---
+- name: Testing Chocolatey Collection
+  hosts: all
+  collections: chocolatey.chocolatey
+
+  tasks:
+    - name: Install notepadplusplus version 8.5.2
+      chocolatey.chocolatey.win_chocolatey:
+        name: notepadplusplus
+        version: '8.5.2'
+    - name: Install vscode version 1.77.0
+      chocolatey.chocolatey.win_chocolatey:
+        name: vscode
+        version: '1.77.0'

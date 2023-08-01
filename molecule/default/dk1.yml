@@ -1,0 +1,5 @@
+---
+- name: This configuration is for DK1 Servers.
+  ansible.windows.win_file:
+    path: C:\Temp\dk1.txt
+    state: touch
