@@ -1,0 +1,11 @@
+---
+
+- name: create a directory
+  win_file:
+    path: c:\temp\molecule
+    state: directory
+- name: fact
+  debug:
+    msg: "{{ ansible_facts['ip_addresses'] }}"
+# tasks file for mol_win_test
+
